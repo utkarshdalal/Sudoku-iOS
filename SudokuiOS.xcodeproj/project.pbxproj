@@ -22,6 +22,9 @@
 		5689FEC3183DDADB007FDDA9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5689FEA2183DDADB007FDDA9 /* UIKit.framework */; };
 		5689FECB183DDADB007FDDA9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5689FEC9183DDADB007FDDA9 /* InfoPlist.strings */; };
 		5689FECD183DDADB007FDDA9 /* SudokuiOSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5689FECC183DDADB007FDDA9 /* SudokuiOSTests.m */; };
+		5689FEE5183DEC48007FDDA9 /* SudokuView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5689FEE4183DEC48007FDDA9 /* SudokuView.m */; };
+		56E0E8A7184D69A600994F1B /* qqwing.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 56E0E8A3184D69A600994F1B /* qqwing.cpp */; };
+		56E0E8A8184D69A600994F1B /* SudokuModel.mm in Sources */ = {isa = PBXBuildFile; fileRef = 56E0E8A6184D69A600994F1B /* SudokuModel.mm */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +58,13 @@
 		5689FEC8183DDADB007FDDA9 /* SudokuiOSTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SudokuiOSTests-Info.plist"; sourceTree = "<group>"; };
 		5689FECA183DDADB007FDDA9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		5689FECC183DDADB007FDDA9 /* SudokuiOSTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SudokuiOSTests.m; sourceTree = "<group>"; };
+		5689FEE3183DEC48007FDDA9 /* SudokuView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SudokuView.h; sourceTree = "<group>"; };
+		5689FEE4183DEC48007FDDA9 /* SudokuView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SudokuView.m; sourceTree = "<group>"; };
+		56E0E8A2184D69A600994F1B /* config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = config.h; sourceTree = "<group>"; };
+		56E0E8A3184D69A600994F1B /* qqwing.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = qqwing.cpp; sourceTree = "<group>"; };
+		56E0E8A4184D69A600994F1B /* qqwing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = qqwing.h; sourceTree = "<group>"; };
+		56E0E8A5184D69A600994F1B /* SudokuModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SudokuModel.h; path = SudokuiOS/SudokuModel.h; sourceTree = "<group>"; };
+		56E0E8A6184D69A600994F1B /* SudokuModel.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = SudokuModel.mm; path = SudokuiOS/SudokuModel.mm; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +94,9 @@
 		5689FE92183DDADB007FDDA9 = {
 			isa = PBXGroup;
 			children = (
+				56E0E8A1184D69A600994F1B /* qqwing (preconfigured) */,
+				56E0E8A5184D69A600994F1B /* SudokuModel.h */,
+				56E0E8A6184D69A600994F1B /* SudokuModel.mm */,
 				5689FEA4183DDADB007FDDA9 /* SudokuiOS */,
 				5689FEC6183DDADB007FDDA9 /* SudokuiOSTests */,
 				5689FE9D183DDADB007FDDA9 /* Frameworks */,
@@ -122,6 +135,8 @@
 				5689FEB7183DDADB007FDDA9 /* SudokuViewController.m */,
 				5689FEB9183DDADB007FDDA9 /* Images.xcassets */,
 				5689FEA5183DDADB007FDDA9 /* Supporting Files */,
+				5689FEE3183DEC48007FDDA9 /* SudokuView.h */,
+				5689FEE4183DEC48007FDDA9 /* SudokuView.m */,
 			);
 			path = SudokuiOS;
 			sourceTree = "<group>";
@@ -153,6 +168,17 @@
 				5689FEC9183DDADB007FDDA9 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		56E0E8A1184D69A600994F1B /* qqwing (preconfigured) */ = {
+			isa = PBXGroup;
+			children = (
+				56E0E8A2184D69A600994F1B /* config.h */,
+				56E0E8A3184D69A600994F1B /* qqwing.cpp */,
+				56E0E8A4184D69A600994F1B /* qqwing.h */,
+			);
+			name = "qqwing (preconfigured)";
+			path = "SudokuiOS/qqwing (preconfigured)";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,7 +282,10 @@
 			files = (
 				5689FEB8183DDADB007FDDA9 /* SudokuViewController.m in Sources */,
 				5689FEAB183DDADB007FDDA9 /* main.m in Sources */,
+				56E0E8A7184D69A600994F1B /* qqwing.cpp in Sources */,
 				5689FEAF183DDADB007FDDA9 /* SudokuAppDelegate.m in Sources */,
+				56E0E8A8184D69A600994F1B /* SudokuModel.mm in Sources */,
+				5689FEE5183DEC48007FDDA9 /* SudokuView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -475,6 +504,7 @@
 				5689FED2183DDADB007FDDA9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5689FED3183DDADB007FDDA9 /* Build configuration list for PBXNativeTarget "SudokuiOSTests" */ = {
 			isa = XCConfigurationList;
@@ -483,6 +513,7 @@
 				5689FED5183DDADB007FDDA9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

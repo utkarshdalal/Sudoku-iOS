@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "SudokuModel.h"
 
 @interface SudokuAppDelegate : UIResponder <UIApplicationDelegate>
 
